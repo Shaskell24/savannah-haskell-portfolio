@@ -3,307 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savannah Haskell - Cybersecurity Portfolio</title>
+    <title>Savannah Haskell - About Me</title>
     <style>
-        :root {
-            --primary: #1a365d;
-            --secondary: #2b6cb0;
-            --text: #2d3748;
-            --light-bg: #f7fafc;
-            --border: #e2e8f0;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-        }
-
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
-
-        nav {
-            background-color: #2d3748;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
-            padding: 15px 20px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background-color: var(--secondary);
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        section {
-            margin-bottom: 60px;
-            scroll-margin-top: 60px;
-        }
-
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 10px;
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-        }
-
-        h3 {
-            color: var(--secondary);
-            margin-top: 0;
-        }
-
-        .card {
-            background: var(--light-bg);
-            border-left: 4px solid var(--secondary);
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 0 8px 8px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        @media (min-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-            margin-top: 10px;
-        }
-
-        .btn:hover {
-            background-color: var(--primary);
-        }
-
-        footer {
-            background-color: #1a202c;
-            color: #a0aec0;
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
+        :root { --primary: #1a365d; --secondary: #2b6cb0; --text: #2d3748; --light-bg: #f7fafc; --border: #e2e8f0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin: 5px 0 0; font-size: 1.1rem; font-weight: 300; }
+        nav { background-color: #2d3748; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: white; padding: 15px 20px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: background 0.3s; }
+        nav a:hover, nav a.active { background-color: var(--secondary); }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; min-height: 60vh; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+        .btn { display: inline-block; background-color: var(--secondary); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
+        .btn:hover { background-color: var(--primary); }
+        footer { background-color: #1a202c; color: #a0aec0; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px; }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Savannah Haskell</h1>
         <p>Cybersecurity BAS Student &bull; Ensign College</p>
     </header>
-
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#guiding-principles">Spiritual Principles</a>
-        <a href="#resume">Résumé</a>
-        <a href="#projects">Projects</a>
-        <a href="#ethics">Ethical Analysis</a>
-        <a href="#reflection">Reflection</a>
+        <a href="index.html" class="active">About Me</a>
+        <a href="principles.html">Spiritual Principles</a>
+        <a href="resume.html">Résumé</a>
+        <a href="projects.html">Projects</a>
+        <a href="ethics.html">Ethical Analysis</a>
+        <a href="reflection.html">Reflection</a>
     </nav>
-
     <div class="container">
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome! I am a Bachelor of Applied Science student in Cybersecurity at Ensign College[cite: 20, 21, 22]. I am dedicated to safeguarding digital landscapes, defending vulnerable systems, and acting as a trusted guardian of sensitive data[cite: 78, 79, 81].</p>
-            <p>My approach to cybersecurity goes beyond lines of code and network architectures; it is deeply rooted in my personal values of integrity, active learning, and service[cite: 78, 79, 81]. I believe that protecting people’s data is a profound way to serve them, and I strive to show honesty and transparency in all of my work[cite: 51, 52, 56]. Let's connect and build a safer digital future together!</p>
-            <a href="https://www.linkedin.com/in/savannahhaskell" class="btn" target="_blank">View My LinkedIn Profile</a>
-        </section>
-
-        <section id="guiding-principles">
-            <h2>Spiritual Guiding Principles</h2>
-            <div class="card">
-                <h3>1. Active Initiative and Agency (Faith in Action)</h3>
-                <p><strong>D&C 58:27-28:</strong> <em>“Men should be anxiously engaged in a good cause...”</em> [cite: 41, 42]</p>
-                <p>True faith in Jesus Christ requires action[cite: 66, 67]. This principle teaches me that I must not passively wait for opportunities to come to me[cite: 43]. In my cybersecurity career, this means eagerly seeking learning experiences, certifications, and professional hands-on labs to actively expand my capacities[cite: 44, 71].</p>
-            </div>
-            <div class="card">
-                <h3>2. Service-Driven Security (Integrity & Helpfulness)</h3>
-                <p><strong>Mosiah 2:17:</strong> <em>“When ye are in the service of your fellow beings ye are only in the service of your God.”</em> [cite: 49, 50]</p>
-                <p>Protecting systems and securing vulnerable networks is not just a technical challenge; it is a profound form of community service[cite: 51, 52]. When I secure data, mitigate risks, and prevent cyber threats, I am directly protecting individuals, preserving their livelihoods, and keeping people safe[cite: 52].</p>
-            </div>
-            <div class="card">
-                <h3>3. Ethical Trustworthiness and Absolute Integrity</h3>
-                <p><strong>Proverbs 3:5-6:</strong> <em>“Trust in the Lord with all thine heart; and lean not unto thine own understanding...”</em> [cite: 46, 47]</p>
-                <p>In the digital realm, trust is our most valuable currency. As a cybersecurity professional, having administrative access to highly confidential information requires unwavering ethics[cite: 117]. Integrity ensures that technical knowledge is never weaponized, allowing clients and employers to trust me completely with their critical assets[cite: 63, 127, 129].</p>
-            </div>
-        </section>
-
-        <section id="resume">
-            <h2>Résumé</h2>
-            <div class="card">
-                <h3>Education</h3>
-                <p><strong>Ensign College</strong> | Salt Lake City, Utah (Jan 2026 - Dec 2026)<br>
-                Bachelor of Applied Science: Cybersecurity [cite: 20, 21, 22]</p>
-                <p><strong>Montreat College</strong> | Montreat, North Carolina (Aug 2022 - Mar 2024)<br>
-                Associates in Applied Science: General and Cybersecurity coursework [cite: 23, 24, 25]</p>
-            </div>
-            
-            <div class="card">
-                <h3>Experience</h3>
-                <p><strong>Life Coach</strong> | Heritage Community, Orem, UT (08/2024 – 03/2025)<br>
-                Supported 13+ young teenage boys with autism, strengthening social, communication, and emotional regulation skills[cite: 4, 5, 6, 7].</p>
-                <p><strong>Packer</strong> | Young Living Essential Oils, Spanish Fork, UT (05/2023 – 08/2023)<br>
-                Operated machinery loading and packing over 9,000 product bottles a day in an assembly line environment[cite: 8, 9, 10, 11].</p>
-                <p><strong>Young Womens President</strong> | LDS Church, Payson, UT (07/2021 – 05/2022)<br>
-                Organized and led meetings, developed lessons, and mentored young women to foster a supportive community[cite: 16, 17, 18].</p>
-            </div>
-            
-            <div class="card">
-                <h3>Skills</h3>
-                <p>Python (Beginner), Linux (Beginner), Networking Foundations, STIG and SCAP compliance, Teamwork, Adaptability, Work Ethic, Communication[cite: 34].</p>
-            </div>
-        </section>
-
- <section id="projects">
-            <h2>Academic Projects</h2>
-            <div class="grid" style="grid-template-columns: 1fr; gap: 30px;">
-                
-                <div class="card" style="border-left: 4px solid var(--primary); padding: 25px;">
-                    <span style="font-size: 0.85rem; font-weight: bold; color: var(--secondary); text-transform: uppercase;">January 2026 – February 2026</span>
-                    <h3 style="margin-top: 5px; font-size: 1.5rem;">Creating a Command and Control (C2) Virtual Lab</h3>
-                    
-                    <p><strong>Project Overview & Objective:</strong><br>
-                    Designed, built, and evaluated a virtual Command-and-Control (C2) security testing lab to analyze real-world cyberattack infrastructure, command execution channels, and modern evasion tactics[cite: 32]. The objective was to understand how attackers maintain remote access, transfer data, and bypass corporate security controls using covert communication protocols.</p>
-                    
-                    <p><strong>Technical Implementation & Methodology:</strong></p>
-                    <ul>
-                        <li><strong>Environment Setup:</strong> Deployed a secure, isolated sandbox environment featuring attacker nodes running <strong>Kali Linux</strong> and target machines running <strong>Ubuntu</strong> VMs[cite: 32].</li>
-                        <li><strong>Infrastructure Evasion & Design:</strong> Researched and simulated advanced multi-tiered network designs used in modern C2 environments, analyzing how attackers employ proxy servers, DNS infrastructure routing, and domain registration techniques to hide traffic.</li>
-                        <li><strong>C2 Channel Analysis:</strong> Evaluated threat behaviors across multiple protocol vectors including HTTP/HTTPS, DNS tunneling, peer-to-peer (P2P), and cloud-based C2 communication channels.</li>
-                        <li><strong>Defensive Analysis:</strong> Monitored traffic patterns to identify malicious network behaviors, generating log data to improve threat detection and alert rules for incident response teams.</li>
-                    </ul>
-
-                    <p><strong>Gospel Integration & Reflection:</strong><br>
-                    <em>Intertwining Technical and Spiritual Growth:</em> Building this lab required a proactive mindset to understand our spiritual and physical adversaries. In cybersecurity, defending a network requires knowing how threats operate so we can block them before they breach the perimeter. Similarly, in our personal lives, the Lord expects us to actively recognize spiritual temptations and build secure personal boundaries. Following the counsel in <strong>Doctrine and Covenants 58:27-28</strong>, I used my agency to study these defense frameworks diligently, preparing myself to protect others[cite: 41, 42, 44].</p>
-                </div>
-
-                <div class="card" style="border-left: 4px solid var(--primary); padding: 25px;">
-                    <span style="font-size: 0.85rem; font-weight: bold; color: var(--secondary); text-transform: uppercase;">January 2026 – February 2026</span>
-                    <h3 style="margin-top: 5px; font-size: 1.5rem;">Simulated Enterprise Network Design & Expansion</h3>
-                    
-                    <p><strong>Project Overview & Objective:</strong><br>
-                    Collaborated with a four-member engineering team to analyze complex corporate requirements and design a robust network expansion for a global simulated business[cite: 28]. The project required outlining architectural expansion designs for corporate headquarters, branch offices, and regional data centers.</p>
-                    
-                    <p><strong>Technical Implementation & My Key Contributions:</strong></p>
-                    <ul>
-                        <li><strong>London Headquarters Topology:</strong> Solely responsible for designing the high-level topology for the London HQ. This architecture featured dual core routers connected to an Internet Service Provider (ISP), dual core switches, a distribution layer switch, a wireless Access Point (AP), and a daisy-chained IP-phone-to-PC endpoint configuration.</li>
-                        <li><strong>Gateway Redundancy (HSRP):</strong> Configured and documented <strong>Hot Standby Router Protocol (HSRP)</strong> between core routers to guarantee seamless gateway redundancy and high network availability in case of hardware failure.</li>
-                        <li><strong>Local Traffic Segmentation:</strong> Segmented internal department traffic on switches using <strong>VLANs and 802.1Q trunking</strong> to securely isolate and optimize internal data flows.</li>
-                        <li><strong>High-Level Design (HLD) Documentation:</strong> Authored "Section 4: Proposed Network Architecture" within the team's official High-Level Design document, clearly translating complex routing designs into business-ready explanations for stakeholders.</li>
-                    </ul>
-
-                    <p><strong>Gospel Integration & Reflection:</strong><br>
-                    <em>Intertwining Technical and Spiritual Growth:</em> This project heavily depended on teamwork and unified coordination. When designing a network, we strive to remove single points of failure so that if one connection falters, another is ready to carry the load. In a spiritual sense, this highlights our duty to support one another. Just as <strong>Mosiah 2:17</strong> teaches us that serving our fellow beings is a form of serving God, our team collaborated closely, stepping in to support each other when challenges arose, ensuring the success of our shared project[cite: 49, 50].</p>
-                </div>
-
-                <div class="card" style="border-left: 4px solid var(--primary); padding: 25px;">
-                    <span style="font-size: 0.85rem; font-weight: bold; color: var(--secondary); text-transform: uppercase;">January 2026 – February 2026</span>
-                    <h3 style="margin-top: 5px; font-size: 1.5rem;">Vulnerability Auditing & Compliance Assessment (STIG/SCAP)</h3>
-                    
-                    <p><strong>Project Overview & Objective:</strong><br>
-                    Partnered with a six-member security team to evaluate the security posture of an enterprise local network against federal standards[cite: 30]. The objective was to run system security assessments, isolate critical misconfigurations, and draft robust corporate policies to mitigate organizational risk.</p>
-                    
-                    <p><strong>Technical Implementation & Methodology:</strong></p>
-                    <ul>
-                        <li><strong>Compliance Auditing:</strong> Conducted system-level audits on Windows 11 client systems using the Defense Information Systems Agency (DISA) <strong>STIG (Security Technical Implementation Guides)</strong> and the <strong>SCAP (Security Content Automation Protocol) Compliance Checker</strong>[cite: 30].</li>
-                        <li><strong>Vulnerability Identification:</strong> Discovered and analyzed critical misconfigurations related to weak authentication mechanisms, deficient logging and audit policies, unpatched system updates, and exposed endpoint ports.</li>
-                        <li><strong>Policy Governance:</strong> Co-authored a complete, professional <strong>Corporate Security Policy</strong> and <strong>Network Device Management Standard</strong>, defining access control requirements, Multi-Factor Authentication (MFA) rules, and patch management schedules aligned with CIS Critical Security Controls.</li>
-                        <li><strong>Risk Mitigation Reporting:</strong> Developed and presented a cybersecurity risk assessment report outlining practical remedial strategies for non-compliant endpoints.</li>
-                    </ul>
-
-                    <p><strong>Gospel Integration & Reflection:</strong><br>
-                    <em>Intertwining Technical and Spiritual Growth:</em> Evaluating computer systems against rigorous government STIG standards is highly similar to analyzing our spiritual lives against the commandments. Identifying weak security settings allows us to correct them before bad actors exploit them; similarly, assessing our lives allows us to recognize where we need to adjust and align with God's standards. This continuous audit and refinement process reminds me that maintaining true security—both in IT systems and in our relationship with the Lord—requires constant, honest evaluation, aligning perfectly with <strong>Proverbs 3:5-6</strong>[cite: 46].</p>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="ethics">
-            <h2>Ethical Dilemma Analysis</h2>
-            <div class="card">
-                <h3>Insider Misuse of Administrative Privileges (2020 Twitter Security Breach)</h3>
-                <p>In 2020, attackers used social engineering tactics to manipulate internal employees with elevated system privileges[cite: 118, 119, 122]. This compromise allowed the bad actors to take over high-profile accounts to promote a widespread cryptocurrency scam[cite: 119, 120].</p>
-                <p><strong>The Ethical Problem:</strong> System administrators hold deep trust and strict responsibility over confidential interfaces[cite: 116, 117]. By failing to exercise constant vigilance, administrative boundaries were crossed, violating user trust[cite: 122, 127].</p>
-                <p><strong>Resolution:</strong> Twitter quickly locked down accounts and cooperated with law enforcement[cite: 124]. They subsequently limited internal administrative scopes and mandated strict security training[cite: 125]. This case proves that technical measures are nothing without deep-seated professional integrity and ethical accountability[cite: 127, 128].</p>
-            </div>
-        </section>
-
-        <section id="reflection">
-            <h2>Reflective Experience & Integration</h2>
-            <div class="card">
-                <p>Spending quiet, focused time reflecting on temple covenants brought great clarity to my academic goals. Away from the noise of labs and coursework, I was reminded that our spiritual path is not detached from our professional path. In cybersecurity, we build perimeters and require verified credentials to secure resources. This is deeply parallel to the temple—a safe, dedicated sanctuary where we must prepare and align our lives with the Lord’s standards before entering.</p>
-                <p>This experience highlighted Elder David A. Bednar's analogy of intertwined rope strands. Technical competence, professional communication, faith in Jesus Christ, and strict ethical values are not separate tracks; they are meant to be woven together. Moving forward, I view my cybersecurity studies as a direct way to serve and protect God's children, turning my everyday career tasks into an active expression of my faith and covenants.</p>
-            </div>
-        </section>
-
+        <h2>About Me</h2>
+        <p>Welcome! I am a Bachelor of Applied Science student in Cybersecurity at Ensign College. I am dedicated to safeguarding digital landscapes, defending vulnerable systems, and acting as a trusted guardian of sensitive data.</p>
+        <p>My approach to cybersecurity goes beyond lines of code and network architectures; it is deeply rooted in my personal values of integrity, active learning, and service. I believe that protecting people’s data is a profound way to serve them, and I strive to show honesty and transparency in all of my work. Let's connect and build a safer digital future together!</p>
+        <a href="https://www.linkedin.com/in/savannahhaskell" class="btn" target="_blank">Connect on LinkedIn</a>
     </div>
-
     <footer>
-        <p>&copy; 2026 Savannah Haskell &bull; <a href="mailto:shaskell2019@gmail.com">shaskell2019@gmail.com</a> [cite: 2] &bull; Payson, Utah [cite: 2]</p>
+        <p>&copy; 2026 Savannah Haskell &bull; shaskell2019@gmail.com &bull; Payson, Utah</p>
     </footer>
-
 </body>
 </html>
