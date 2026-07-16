@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résumé - Savannah Haskell</title>
+    <style>
+        :root { --primary: #1a365d; --secondary: #2b6cb0; --text: #2d3748; --light-bg: #f7fafc; --border: #e2e8f0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin: 5px 0 0; font-size: 1.1rem; font-weight: 300; }
+        nav { background-color: #2d3748; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: white; padding: 15px 20px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: background 0.3s; }
+        nav a:hover, nav a.active { background-color: var(--secondary); }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; min-height: 60vh; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+        h3 { color: var(--secondary); margin-top: 0; }
+        .card { background: var(--light-bg); border-left: 4px solid var(--secondary); padding: 20px; margin-bottom: 25px; border-radius: 0 8px 8px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 10px; }
+        .skill-item { background: #edf2f7; padding: 8px 12px; border-radius: 4px; font-size: 0.9rem; text-align: center; font-weight: 500; }
+        footer { background-color: #1a202c; color: #a0aec0; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Savannah Haskell</h1>
+        <p>Cybersecurity BAS Student &bull; Ensign College</p>
+    </header>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="principles.html">Spiritual Principles</a>
+        <a href="resume.html" class="active">Résumé</a>
+        <a href="projects.html">Projects</a>
+        <a href="ethics.html">Ethical Analysis</a>
+        <a href="reflection.html">Reflection</a>
+    </nav>
+    <div class="container">
+        <h2>Professional Résumé</h2>
+        
+        <div class="card">
+            <h3>Education</h3>
+            <p><strong>Ensign College</strong> | Salt Lake City, Utah (Jan 2026 - Dec 2026)<br>
+            <em>Bachelor of Applied Science in Cybersecurity</em> [cite: 20, 21, 22]</p>
+            <p><strong>Montreat College</strong> | Montreat, North Carolina (Aug 2022 - Mar 2024)<br>
+            <em>Associate in Applied Science (General and Cybersecurity Coursework)</em> [cite: 23, 24, 25]</p>
+        </div>
+
+        <div class="card">
+            <h3>Work & Leadership Experience</h3>
+            <p><strong>Life Coach</strong> | Heritage Community, Orem, Utah (08/2024 – 03/2025)<br>
+            Supported 13+ young autistic teenage boys daily, helping develop social, communication, and emotional regulation skills[cite: 4, 5, 6, 7].</p>
+            <p><strong>Packer</strong> | Young Living Essential Oils, Spanish Fork, Utah (05/2023 – 08/2023)<br>
+            Operated assembly line machinery, loading glass bottles with essential oils and packing over 9,000 bottles daily with a collaborative team[cite: 8, 9, 10, 11].</p>
+            <p><strong>Custom Picture Frame Assistant</strong> | Gasser's Mountain Arts, Spanish Fork, Utah (05/2022 – 08/2022)<br>
+            Guided customers in framing selection and operated specialized cutting machinery to prepare high-quality custom frames[cite: 12, 13, 14, 15].</p>
+            <p><strong>Young Women's President</strong> | Church of Jesus Christ of Latter-day Saints, Payson, Utah (07/2021 – 05/2022)<br>
+            Organized, led, and mentored youth while maintaining constant communication with leaders to foster supportive environments[cite: 16, 17, 18].</p>
+        </div>
+
+        <div class="card">
+            <h3>Technical & Soft Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">Python (Beginner) [cite: 34]</div>
+                <div class="skill-item">Linux (Beginner) [cite: 34]</div>
+                <div class="skill-item">Networking Foundations [cite: 34]</div>
+                <div class="skill-item">STIG / SCAP Assessments [cite: 34]</div>
+                <div class="skill-item">Teamwork & Communication [cite: 34]</div>
+                <div class="skill-item">Adaptability & Work Ethic [cite: 34]</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Savannah Haskell &bull; shaskell2019@gmail.com &bull; Payson, Utah [cite: 2]</p>
+    </footer>
+</body>
+</html>
