@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Savannah Haskell</title>
+    <style>
+        :root { --primary: #1a365d; --secondary: #2b6cb0; --text: #2d3748; --light-bg: #f7fafc; --border: #e2e8f0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p { margin: 5px 0 0; font-size: 1.1rem; font-weight: 300; }
+        nav { background-color: #2d3748; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: white; padding: 15px 20px; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: background 0.3s; }
+        nav a:hover, nav a.active { background-color: var(--secondary); }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; min-height: 60vh; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+        h3 { color: var(--secondary); margin-top: 5px; font-size: 1.4rem; }
+        .card { background: var(--light-bg); border-left: 4px solid var(--primary); padding: 25px; margin-bottom: 30px; border-radius: 0 8px 8px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .date-badge { font-size: 0.85rem; font-weight: bold; color: var(--secondary); text-transform: uppercase; }
+        footer { background-color: #1a202c; color: #a0aec0; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Savannah Haskell</h1>
+        <p>Cybersecurity BAS Student &bull; Ensign College</p>
+    </header>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="principles.html">Spiritual Principles</a>
+        <a href="resume.html">Résumé</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="ethics.html">Ethical Analysis</a>
+        <a href="reflection.html">Reflection</a>
+    </nav>
+    <div class="container">
+        <h2>Academic Projects</h2>
+        
+        <div class="card">
+            <span class="date-badge">January 2026 – February 2026 [cite: 31]</span>
+            <h3>Creating a Command and Control (C2) Virtual Lab</h3>
+            <p><strong>Project Overview & Objective:</strong> Designed, built, and evaluated a virtual Command-and-Control (C2) security testing lab to analyze real-world cyberattack infrastructure, command execution channels, and modern evasion tactics[cite: 32].</p>
+            <p><strong>Technical Implementation & Methodology:</strong></p>
+            <ul>
+                <li><strong>Environment Setup:</strong> Deployed a secure, isolated sandbox environment featuring attacker nodes running <strong>Kali Linux</strong> and target machines running <strong>Ubuntu</strong> VMs[cite: 32].</li>
+                <li><strong>Infrastructure Evasion:</strong> Researched how attackers employ proxy servers, DNS infrastructure routing, and domain registration techniques to hide command communication channels[cite: 32].</li>
+                <li><strong>C2 Channel Analysis:</strong> Evaluated threat behaviors across protocol vectors including HTTP/HTTPS, DNS, and peer-to-peer (P2P) communication channels[cite: 32].</li>
+            </ul>
+            <p><strong>Gospel Integration:</strong> Building this lab required a proactive mindset to understand network threats so we can block them before they breach the perimeter[cite: 44]. Similarly, the Lord expects us to recognize spiritual temptations and build secure personal boundaries[cite: 45]. Following <strong>D&C 58:27-28</strong>, I utilized my agency to build these defense frameworks diligently to protect others[cite: 43, 44].</p>
+        </div>
+
+        <div class="card">
+            <span class="date-badge">January 2026 – February 2026 [cite: 27]</span>
+            <h3>Simulated Enterprise Network Design & Expansion</h3>
+            <p><strong>Project Overview & Objective:</strong> Partnered with a four-member engineering team to analyze corporate requirements and design a robust network expansion topology for a global simulated enterprise[cite: 28].</p>
+            <p><strong>Technical Implementation & Key Contributions:</strong></p>
+            <ul>
+                <li><strong>London Headquarters Topology:</strong> Contributed directly to designing the topology for the London HQ, incorporating core switches, distribution switches, and end-user structures securely.</li>
+                <li><strong>Gateway Redundancy:</strong> Integrated and simulated <strong>Hot Standby Router Protocol (HSRP)</strong> between core routing appliances to guarantee reliable failovers.</li>
+                <li><strong>Local Traffic Segmentation:</strong> Structured local user boundaries using Virtual Local Area Networks (VLANs) and secure trunking pathways on network switches.</li>
+            </ul>
+            <p><strong>Gospel Integration:</strong> This project highlights cooperative coordination[cite: 28]. In a network, we minimize single points of failure to stay online. Spiritually, we support and carry each other’s burdens[cite: 52]. As <strong>Mosiah 2:17</strong> teaches us, serving our peers with technical excellence is a direct way to show love and serve God[cite: 50, 51].</p>
+        </div>
+
+        <div class="card">
+            <span class="date-badge">January 2026 – February 2026 [cite: 29]</span>
+            <h3>Vulnerability Auditing & Compliance Assessment (STIG/SCAP)</h3>
+            <p><strong>Project Overview & Objective:</strong> Partnered with a six-member security team to assess a simulated business network using STIG/SCAP tools, identify misconfigurations, and create risk mitigation policies[cite: 30].</p>
+            <p><strong>Technical Implementation & Methodology:</strong></p>
+            <ul>
+                <li><strong>Compliance Auditing:</strong> Audited Windows 11 client networks against DISA <strong>STIG guidelines</strong> using automated <strong>SCAP compliance verification</strong> modules[cite: 30].</li>
+                <li><strong>Vulnerability Analysis:</strong> Evaluated misconfigurations in local authentication configurations, patch cycles, local system logging, and open system ports.</li>
+                <li><strong>Policy Creation:</strong> Developed custom Corporate Security Policies and Network Device Management standards aligned to secure compliance goals[cite: 30].</li>
+            </ul>
+            <p><strong>Gospel Integration:</strong> Auditing systems against strict government standards mirrors how we assess our lives against the gospel[cite: 64]. Finding weak security settings allows us to fix them before a breach occurs[cite: 129]. This audit process aligns directly with relying on continuous self-evaluation and guidance under <strong>Proverbs 3:5-6</strong>[cite: 47, 48].</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Savannah Haskell &bull; shaskell2019@gmail.com &bull; Payson, Utah [cite: 2]</p>
+    </footer>
+</body>
+</html>
